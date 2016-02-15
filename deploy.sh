@@ -10,14 +10,4 @@ while [ $check = 0 ];do
 echo -n "."
 sleep 2
 
-if [ $(echo $deployment | grep -c '<failed>false</failed>') -ne 1 ]
-then
-	echo " successful !"
-	exit 0
-elif [ $(echo $deployment | grep -c '<failed>true</failed>') -ne 1 ]
-then
-	echo " failed !"
-	exit 1
-fi
-
 done
