@@ -8,11 +8,11 @@ check=0
 
 while [ $check = 0 ];do
 
-if $(echo $deployment | grep -q '<failed>false</failed>') 
+if $(echo $deployment | grep -q '<failed>true</failed>') 
 then
 	echo " successful !"
 	exit 0
-elif $(echo $deployment | grep -q '<failed>true</failed>')
+elif $(echo $deployment | grep -q '<failed>false</failed>')
 then
 	echo " failed !"
 	exit 1
