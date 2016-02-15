@@ -10,4 +10,6 @@ while [ $check = 0 ];do
 echo -n "."
 sleep 2
 
+echo $deployment
+
 done
