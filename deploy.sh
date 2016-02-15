@@ -6,12 +6,10 @@ deployment=$(curl -X POST -H "Accept: application/vnd.com.sensiolabs.insight+xml
 
 check=0
 
-echo $deployment
-
 while [ $check = 0 ];do
 
 echo -n "."
-sleep 5
+sleep 2
 
 if $(echo $deployment | grep -q '<failed>false</failed>') 
 then
