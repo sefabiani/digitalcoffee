@@ -1,4 +1,7 @@
 {
+	"name": "vendor-name/project-name",
+    "description": "This is a very cool package!",
+	"license": "MIT",
     "require": {
         "silex/silex": "~1.3"
     }
