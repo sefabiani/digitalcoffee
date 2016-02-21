@@ -1,6 +1,6 @@
 {
-	"name": "vendor-name/project-name",
-    "description": "This is a very cool package!",
+	"name": "digitalcoffee/dcsite",
+    "description": "Site of Digital Coffee",
 	"license": "MIT",
     "require": {
         "silex/silex": "~1.3"
